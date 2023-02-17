@@ -1,7 +1,7 @@
 # Laboratory Work Nr.1
 
 ### Course: Formal Languages & Finite Automata
-### Author: Prodan Rodica
+### Author: Prodan Rodica, FAF-211
 
 ----
 

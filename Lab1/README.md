@@ -30,7 +30,6 @@
 
 ## Implementation description
 
-* Grammar Code snippets
 
 I had the variant 20
 ```
@@ -45,6 +44,7 @@ P={
     C → aS
 }
 ```
+* Grammar Code snippets
 
 To generate 5 valid random strings from the grammar I made a `generate_strings()` function, that begins trom the strat symbol `S`, derives it and stores the choices in a list, then randomly choosing from it. 
 ```

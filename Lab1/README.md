@@ -85,3 +85,7 @@ To check if a string belongs to the language, I created a method `accepts()`, th
 ## Conclusions / Screenshots / Results
 
 After performing this laboratory work I studied what is a language, what it needs to have in order to be considered a formal one and what is a Finite automaton.
+## The results:
+![image](https://user-images.githubusercontent.com/113309236/219716343-0148cc73-96ca-49a6-afe1-dbd2705b4aab.png)
+![image](https://user-images.githubusercontent.com/113309236/219716445-8dc9149d-7a35-4331-8d1e-4be324424177.png)
+![image](https://user-images.githubusercontent.com/113309236/219716495-1621d325-08b3-4f00-8180-89fb715d5556.png)

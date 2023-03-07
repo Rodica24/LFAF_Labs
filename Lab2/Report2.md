@@ -62,3 +62,4 @@ Also, there is the function `is_deterministic` that checks if the target state h
 
 ## Conclusions / Screenshots / Results
 First of all, I recived the classification for my grammar which is `Type 3`
+![graph](https://user-images.githubusercontent.com/113309236/223562255-01ab3292-7d98-4ae9-86a5-87212b4ba354.png)

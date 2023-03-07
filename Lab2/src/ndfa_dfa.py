@@ -1,7 +1,7 @@
 from collections import deque
 
 def ndfa_to_dfa(Q, sigma, delta, q0, F):
-    # Initialize the DFA 
+ 
     q0_DFA = frozenset([q0])
     Q_DFA = {q0_DFA}
     F_DFA = set()
@@ -25,11 +25,11 @@ def ndfa_to_dfa(Q, sigma, delta, q0, F):
                     queue.append(q_NDFA)
                 # Add the DFA transition (q_DFA, a) -> q_NDFA
                 delta_DFA.setdefault(q_DFA, {})[a] = q_NDFA
-        # If q_DFA contains a final state in the NDFA, mark it as a final state in the DFA
+        # If q_DFA contains a final state in the NDFA, it is marked as a final state in the DFA
         if q_DFA & F:
             F_DFA.add(q_DFA)
 
-    # Convert the sets to tuples to remove the "frozenset" keyword from the output
+    # Convert the sets to tuples 
     Q_DFA = tuple(tuple(q) for q in Q_DFA)
     F_DFA = tuple(tuple(q) for q in F_DFA)
     delta_DFA = {tuple(q): {a: tuple(q_NDFA) for a, q_NDFA in transitions.items()} for q, transitions in delta_DFA.items()}

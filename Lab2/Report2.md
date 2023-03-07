@@ -64,4 +64,17 @@ Also, I've tried to implement the graphic view of the NFA, using `matplotlib` an
 
 ## Conclusions / Screenshots / Results
 First of all, I recived the classification for my grammar which is `Type 3`
+
+![image](https://user-images.githubusercontent.com/113309236/223571774-323f9dc9-5acf-49f2-82c5-7b95a2b64922.png)
+
+Then, the regular grammar is printed, along with the characteristic of the FA
+
+![image](https://user-images.githubusercontent.com/113309236/223572086-08d4b083-c5ce-48fd-b267-ee0021dd0ac9.png)
+
+Afterwards, the transitions of the DFA are shown and as it can be seen, a new state appeared `q0q1`
+
+![image](https://user-images.githubusercontent.com/113309236/223572285-d5b93fef-21c6-4ad3-b015-f2c0002e4770.png)
+
+And, at last, here is the representation of the NFA presented by python
+
 ![graph](https://user-images.githubusercontent.com/113309236/223562255-01ab3292-7d98-4ae9-86a5-87212b4ba354.png)

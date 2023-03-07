@@ -58,7 +58,9 @@ In the grammar file, I implemented a function called `classify_grammar`, that cl
 Regardless the FA tasks, I created a `fa_to_grammar` function that iterates over all possible pairs of states and symbols, gets the target state of the transition and if exists, a production is added, otherwise if the target state is a final state an empty string is added.
 Also, there is the function `is_deterministic` that checks if the target state has already been seen for the input symbol.
 
-In the function `ndfa_to_nfa`, the NDFA is converted to a DFA using the powerset construction algorithm.
+In the function `ndfa_to_nfa`, the NDFA is converted to a DFA using the powerset construction algorithm. We have to initialize the DFA with the empty set as the initial state, use a queue to process unexplored DFA states and for each unexplored DFA state, the set of NDFA states is being computed. To use the `ndfa_to_dfa` function, it is needed to provide the input for the NDFA as a set of states `Q`, a set of input symbols `sigma`, the transition function `delta` as a dictionary, the initial state `q0`, and the set of final states `F`. The function then returns the equivalent DFA. 
+
+Also, I've tried to implement the graphic view of the NFA, using `matplotlib` and `networkx` libraries, specialized in the representation of graphs.
 
 ## Conclusions / Screenshots / Results
 First of all, I recived the classification for my grammar which is `Type 3`

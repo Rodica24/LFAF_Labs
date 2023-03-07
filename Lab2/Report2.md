@@ -58,7 +58,7 @@ In the grammar file, I implemented a function called `classify_grammar`, that cl
 Regardless the FA tasks, I created a `fa_to_grammar` function that iterates over all possible pairs of states and symbols, gets the target state of the transition and if exists, a production is added, otherwise if the target state is a final state an empty string is added.
 Also, there is the function `is_deterministic` that checks if the target state has already been seen for the input symbol.
 
-
+In the function `ndfa_to_nfa`, the NDFA is converted to a DFA using the powerset construction algorithm.
 
 ## Conclusions / Screenshots / Results
 First of all, I recived the classification for my grammar which is `Type 3`

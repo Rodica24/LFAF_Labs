@@ -68,3 +68,6 @@ I received this output:
 ## Conclusions
 In this laboratory work I learned and implemented the lexer for simple mathematical calculations.
 I understood what lexical analysis is and got familiar with the inner workings of a tokenizer.
+
+## References
+[1] [Lexical analysis](https://en.wikipedia.org/wiki/Lexical_analysis)

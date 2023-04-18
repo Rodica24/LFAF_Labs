@@ -33,7 +33,7 @@ To obtain grammar in CNF we have to follow these 5 steps:
 
 ## Implementation description
 
-First of all, I had to remove the epsilon productions. For this I have the `eliminate_epsilon` method. It takes a set of productions and removes all epsilon productions from them. It first makes a copy of the productions, finding all symbols that have an epsilon production, and creating a new dictionary. Then, iterates over each symbol in the new dictionary and for each occurrence of a symbol that can derive epsilon, it adds new productions to the new dictionary that combine the original production with all possible 
+First of all, I had to remove the epsilon productions. For this I have the `eliminate_epsilon` method which takes a set of productions and removes all epsilon productions from them. It first makes a copy of the productions, finding all symbols that have an epsilon production, and creating a new dictionary. Then, iterates over each symbol in the new dictionary and for each occurrence of a symbol that can derive epsilon, it adds new productions to the new dictionary that combine the original production with all possible 
 combinations of the epsilon productions for that symbol.
 ```
     def eliminate_epsilon(self):
